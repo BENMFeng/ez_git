@@ -21,7 +21,7 @@ gnupg (>=0.3.7)
 0x04 获得工程提交辅助程序ez_git.pyo 
 ----------------------------------------------------
 完成前三个步骤后向Administrator申请或在GitHub下载
-GitHub下载地址：
+GitHub下载地址：https://github.com/BENMFeng/ez_git
 为保证帐户和项目安全，作了加密编译处理，需要向Administrator申请gpg密钥license
 并将.gpglic目录放到ez_git.pyo同一个文件夹中
 该程序主要含以下功能：
