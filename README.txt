@@ -1,4 +1,4 @@
-#------------------------- GIT 项目管理 v1.0 -------------------------#
+#------------------------- GIT 项目管理 v1.1 -------------------------#
 0x01 生成并上传SSH RSA公钥文件id_rsa.pub提交给Administrator 
 ----------------------------------------------------
 需要命令行环境(unix/linux/mac/cygwin/mingw)
@@ -8,10 +8,13 @@
 0x02 安装Git和Python，及需求包
 ----------------------------------------------------
 git下载: http://git-scm.com/
+初始设置git
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
 以下python库可以用pip或easy_install安装
 Crypto (>=2.6)
 rsa (>=3.1.4)
-gnupg (>=0.3.7)
+python-gnupg (>=0.3.7)
 
 0x03 申请项目管理权限和branch配置
 ----------------------------------------------------
@@ -31,21 +34,26 @@ GitHub下载地址：https://github.com/BENMFeng/ez_git
 
 0x05 修改本地工程，并用ez_git来上传代码
 ----------------------------------------------------
-1. 配置本地git仓库(git config/git init)
+1. 配置本地git仓库(git config/git init，亦可不初始化，见ez_git使用0）)
 2. git checkout branch（你权限所在的branch）
 3. 本地工作目录修改工程;
 4. 上传至本地工作GIT暂存区域;（可选）
 5. git commit/git tag(可选）
 6. ez_git程序使用方法
-Usage Example: 用法见 python ez_git.pyo --help
-1) 直接提交工程：python ez_git.pyo -p **yourprojectname -b **yourbranch
-2) 顺带提交注释：python ez_git.pyo -p **yourprojectname -b **yourbranch -m '**updatemessage'
-3) 先更新你的branch再上传代码：python ez_git.pyo -p **yourprojectname -b **yourbranch --syn
-4) 上传代码后同步一下master branch: python ez_git.pyo -p **yourprojectname -b **yourbranch --update
-'''
-**yourprojectname 是指你需要同步本地的project名
-**yourbranch      是指该project你所拥有的分支
-**updatemessage   是提交时需要注释的文字
+	Usage Example: 用法见 python ez_git.pyo --help
+	0) 初级初始化： 
+	在~/.bashrc或~/.bash_profile或环境变量中声明
+	export EZ_GIT=/path/ez_git    #/path/ez_git为ez_git.pyo主程序的存放路径
+	python $EZ_GIT/ez_git.pyo -p **yourprojectname -b **yourbranch -u
+	'''不用自建文件夹，项目目录会自动同步到当前目录'''
+	1) 直接提交工程：python $EZ_GIT/ez_git.pyo -p **yourprojectname -b **yourbranch
+	2) 顺带提交注释：python $EZ_GIT/ez_git.pyo -p **yourprojectname -b **yourbranch -m '**updatemessage'
+	3) 先更新你的branch再上传代码：python $EZ_GIT/ez_git.pyo -p **yourprojectname -b **yourbranch --syn
+	4) 上传代码后同步一下master branch: python $EZ_GIT/ez_git.pyo -p **yourprojectname -b **yourbranch --update
+	'''
+	**yourprojectname 是指你需要同步本地的project名
+	**yourbranch      是指该project你所拥有的分支
+	**updatemessage   是提交时需要注释的文字
 
 BENM FENG <binxiaofeng@gmail.com>
 BD: 2014-12-25
