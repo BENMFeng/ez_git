@@ -1,0 +1,47 @@
+#------------------------- GIT 项目管理 v1.0 -------------------------#
+0x01 生成并上传SSH RSA公钥文件id_rsa.pub提交给Administrator 
+----------------------------------------------------
+需要命令行环境(unix/linux/mac/cygwin/mingw)
+生成方法，使用ssh-keygen/PuTTYgen，不要设置密码
+把~/.ssh/id_rsa.pub拷贝出来发送给 BENM <binxiaofeng@gmail.com>
+
+0x02 安装Git和Python，及需求包
+----------------------------------------------------
+git http://git-scm.com/
+以下python库可以用pip或easy_install安装
+Crypto (>=2.6)
+rsa (>=3.1.4)
+gnupg (>=0.3.7)
+
+0x03 申请项目管理权限和branch配置
+----------------------------------------------------
+提交project名
+提交branch权限
+
+0x04 获得工程提交辅助程序ez_git.pyo 
+----------------------------------------------------
+完成前三个步骤后向Administrator申请
+为保证帐户和项目安全，作了加密编译处理
+该程序主要含以下功能：
+(1) 获取IP及权限、分支管理配置；
+(2) 更新master及branch；
+(3) 提交工程
+
+0x05 修改本地工程，并用ez_git来上传代码
+----------------------------------------------------
+1. 配置本地git仓库(git config/git init)
+2. git checkout branch（你权限所在的branch）
+3. 本地工作目录修改工程;
+4. 上传至本地工作GIT暂存区域;（可选）
+5. git commit/git tag(可选）
+6. ez_git
+Usage Example: 用法见 python ez_git.pyo --help
+1) 直接提交工程：python ez_git.pyo -p yourprojectname -b yourbranch
+2) 顺带提交注释：python ez_git.pyo -p yourprojectname -b yourbranch -m 'update message'
+3) 先更新你的branch再上传代码：python ez_git.pyo -p yourprojectname -b yourbranch --syn
+4) 上传代码后同步一下master branch: python ez_git.pyo -p yourprojectname -b yourbranch --update
+
+BENM FENG <binxiaofeng@gmail.com>
+BD: 2014-12-25
+Modified: 2015-04-30
+-------------------------------------------------------------------------
