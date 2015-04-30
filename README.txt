@@ -7,7 +7,7 @@
 
 0x02 安装Git和Python，及需求包
 ----------------------------------------------------
-git http://git-scm.com/
+git下载: http://git-scm.com/
 以下python库可以用pip或easy_install安装
 Crypto (>=2.6)
 rsa (>=3.1.4)
@@ -20,8 +20,10 @@ gnupg (>=0.3.7)
 
 0x04 获得工程提交辅助程序ez_git.pyo 
 ----------------------------------------------------
-完成前三个步骤后向Administrator申请
-为保证帐户和项目安全，作了加密编译处理
+完成前三个步骤后向Administrator申请或在GitHub下载
+GitHub下载地址：
+为保证帐户和项目安全，作了加密编译处理，需要向Administrator申请gpg密钥license
+并将.gpglic目录放到ez_git.pyo同一个文件夹中
 该程序主要含以下功能：
 (1) 获取IP及权限、分支管理配置；
 (2) 更新master及branch；
@@ -34,12 +36,16 @@ gnupg (>=0.3.7)
 3. 本地工作目录修改工程;
 4. 上传至本地工作GIT暂存区域;（可选）
 5. git commit/git tag(可选）
-6. ez_git
+6. ez_git程序使用方法
 Usage Example: 用法见 python ez_git.pyo --help
-1) 直接提交工程：python ez_git.pyo -p yourprojectname -b yourbranch
-2) 顺带提交注释：python ez_git.pyo -p yourprojectname -b yourbranch -m 'update message'
-3) 先更新你的branch再上传代码：python ez_git.pyo -p yourprojectname -b yourbranch --syn
-4) 上传代码后同步一下master branch: python ez_git.pyo -p yourprojectname -b yourbranch --update
+1) 直接提交工程：python ez_git.pyo -p **yourprojectname -b **yourbranch
+2) 顺带提交注释：python ez_git.pyo -p **yourprojectname -b **yourbranch -m '**updatemessage'
+3) 先更新你的branch再上传代码：python ez_git.pyo -p **yourprojectname -b **yourbranch --syn
+4) 上传代码后同步一下master branch: python ez_git.pyo -p **yourprojectname -b **yourbranch --update
+'''
+**yourprojectname 是指你需要同步本地的project名
+**yourbranch      是指该project你所拥有的分支
+**updatemessage   是提交时需要注释的文字
 
 BENM FENG <binxiaofeng@gmail.com>
 BD: 2014-12-25
