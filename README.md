@@ -64,15 +64,15 @@ Usage Example: 用法见 python ez_git.pyo --help
 
 *   初级初始化： 
 
-	在~/.bashrc或~/.bash_profile或环境变量中声明(#/path/ez_git为ez_git.pyo主程序的存放路径)：
+在~/.bashrc或~/.bash_profile或环境变量中声明(#/path/ez_git为ez_git.pyo主程序的存放路径)：
 		
 <code>export EZ_GIT=/path/ez_git</code>   
 
 运行
 		
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectnam**e -b **yourbranch** -u</code>
-		
-	_**不用自建文件夹，项目目录会自动同步到当前目录**_
+	
+_**不用自建文件夹，项目目录会自动同步到当前目录**_
 		
 *   直接提交工程：
 	
