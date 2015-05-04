@@ -68,7 +68,7 @@ Usage Example: 用法见 python ez_git.pyo --help
 		
 <code>export EZ_GIT=/path/ez_git</code>   
 
-	运行
+运行
 		
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectnam**e -b **yourbranch** -u</code>
 		
