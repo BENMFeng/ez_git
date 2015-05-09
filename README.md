@@ -84,11 +84,11 @@ _**不用自建文件夹，项目目录会自动同步到当前目录**_
 	
 *   先更新你的branch再上传代码：
 	
-<code>python $EZ_GIT/ez_git.pyo -p **yourprojectname** -b **yourbranch** --syn</code>
-	
-*   上传代码后同步一下master branch: 
-	
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectname** -b **yourbranch** --update</code>
+	
+*   上传代码后同步一下完整master分支(必须具备master分支权限）: 
+	
+<code>python $EZ_GIT/ez_git.pyo -p **yourprojectname** -b **yourbranch** --sync</code>
 	
 **yourprojectname** 是指你需要同步本地的project名
 
