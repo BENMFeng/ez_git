@@ -4,7 +4,7 @@ GIT 项目管理 v1.1
 ----------------------------------------------------
 需要命令行环境(unix/linux/mac/cygwin/mingw)
 生成方法，使用ssh-keygen/PuTTYgen，不要设置密码
-把~/.ssh/id_rsa.pub拷贝出来发送给 BENM <binxiaofeng@gmail.com>
+把~/.ssh/id_rsa.pub拷贝出来发送给 Administrator
 
 0x02 安装Git和Python，及需求包
 ----------------------------------------------------
@@ -97,7 +97,7 @@ _**不用自建文件夹，项目目录会自动同步到当前目录**_
 **updatemessage**   是提交时需要注释的文字
 
 ---
-BENM FENG <binxiaofeng@gmail.com>
+BENM FENG
 
 BD: 2014-12-25
 
