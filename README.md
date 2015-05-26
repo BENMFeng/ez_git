@@ -62,7 +62,7 @@ GitHub下载地址：https://github.com/BENMFeng/ez_git
 
 Usage Example: 用法见 python ez_git.pyo --help
 
-*   初级初始化： 
+*   初始化： 
 
 在~/.bashrc或~/.bash_profile或环境变量中声明(#/path/ez_git为ez_git.pyo主程序的存放路径)：
 		
