@@ -1,10 +1,10 @@
-GIT 加密信道项目管理 v1.1
+GIT 加密信道项目管理 v1.2
 =============
 0x01 生成并上传SSH RSA公钥文件id_rsa.pub提交给Administrator 
 ----------------------------------------------------
-需要命令行环境(unix/linux/mac/cygwin/mingw)
+需要命令行环境(unix/linux/mac/cygwin/mingw/dos/windows cmd)
 生成方法，使用ssh-keygen/PuTTYgen，不要设置密码
-把~/.ssh/id_rsa.pub拷贝出来发送给 Administrator
+把~/.ssh/id_rsa.pub(windows: %UserProfile%\\.ssh\\id_rsa.pub)拷贝出来发送给 Administrator
 
 0x02 安装Git和Python，及需求包
 ----------------------------------------------------
@@ -23,6 +23,8 @@ Crypto (>=2.6)
 rsa (>=3.1.4)
 
 python-gnupg (>=0.3.7)
+
+platform (>=1.0.7)
 
 0x03 申请项目管理权限和branch配置
 ----------------------------------------------------
@@ -101,4 +103,4 @@ BENM FENG
 
 BD: 2014-12-25
 
-Modified: 2015-05-01
+Modified: 2015-06-30
