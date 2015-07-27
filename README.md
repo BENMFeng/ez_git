@@ -1,24 +1,25 @@
-GIT ¼ÓÃÜĞÅµÀÏîÄ¿¹ÜÀí v1.2
+GIT åŠ å¯†ä¿¡é“é¡¹ç›®ç®¡ç† v1.3
 =============
-0x01 Éú³É²¢ÉÏ´«SSH RSA¹«Ô¿ÎÄ¼şid_rsa.pubÌá½»¸øAdministrator 
+0x01 ç”Ÿæˆå¹¶ä¸Šä¼ SSH RSAå…¬é’¥æ–‡ä»¶id_rsa.pubæäº¤ç»™Administrator 
 ----------------------------------------------------
-ĞèÒªÃüÁîĞĞ»·¾³(unix/linux/mac/cygwin/mingw/dos/windows cmd)
-Éú³É·½·¨£¬Ê¹ÓÃssh-keygen/PuTTYgen£¬²»ÒªÉèÖÃÃÜÂë
-°Ñ~/.ssh/id_rsa.pub(windows: %UserProfile%\\.ssh\\id_rsa.pub)¿½±´³öÀ´·¢ËÍ¸ø Administrator
+éœ€è¦å‘½ä»¤è¡Œç¯å¢ƒ(unix/linux/mac/cygwin/mingw/dos/windows cmd)
+ç”Ÿæˆæ–¹æ³•ï¼Œä½¿ç”¨ssh-keygen/PuTTYgenï¼Œä¸è¦è®¾ç½®å¯†ç 
+æŠŠ~/.ssh/id_rsa.pub(windows: %UserProfile%\\.ssh\\id_rsa.pub)æ‹·è´å‡ºæ¥å‘é€ç»™ Administrator
+Windowså¯ä»¥ç”¨git bashä½¿ç”¨ssh-keygenç”Ÿæˆ
 
-0x02 °²×°GitºÍPython£¬¼°ĞèÇó°ü
+0x02 å®‰è£…Gitå’ŒPythonï¼ŒåŠéœ€æ±‚åŒ…
 ----------------------------------------------------
-gitÏÂÔØ: http://git-scm.com/
+gitä¸‹è½½: http://git-scm.com/
 
-³õÊ¼ÉèÖÃgit:
+åˆå§‹è®¾ç½®git:
 
 <code>git config --global user.name "Your Name"</code>
 
 <code>git config --global user.email "Your Email"</code>
 
-ÒÔÏÂpython¿â¿ÉÒÔÓÃpip»òeasy_install°²×°
+ä»¥ä¸‹pythonåº“å¯ä»¥ç”¨pipæˆ–easy_installå®‰è£…
 
-Crypto (>=2.6)
+pycrypto (>=2.6) (Windowså¯èƒ½éœ€è¦ä¸‹è½½Microsoft Visual C++ Compiler for Python 2.7)
 
 rsa (>=3.1.4)
 
@@ -26,81 +27,81 @@ python-gnupg (>=0.3.7)
 
 platform (>=1.0.7)
 
-0x03 ÉêÇëÏîÄ¿¹ÜÀíÈ¨ÏŞºÍbranchÅäÖÃ
+0x03 ç”³è¯·é¡¹ç›®ç®¡ç†æƒé™å’Œbranché…ç½®
 ----------------------------------------------------
-Ìá½»projectÃû
+æäº¤projectå
 
-Ìá½»branchÈ¨ÏŞ
+æäº¤branchæƒé™
 
-0x04 »ñµÃ¹¤³ÌÌá½»¸¨Öú³ÌĞòez_git.pyo 
+0x04 è·å¾—å·¥ç¨‹æäº¤è¾…åŠ©ç¨‹åºez_git.pyo 
 ----------------------------------------------------
-Íê³ÉÇ°Èı¸ö²½ÖèºóÏòAdministratorÉêÇë»òÔÚGitHubÏÂÔØ
+å®Œæˆå‰ä¸‰ä¸ªæ­¥éª¤åå‘Administratorç”³è¯·æˆ–åœ¨GitHubä¸‹è½½
 
-GitHubÏÂÔØµØÖ·£ºhttps://github.com/BENMFeng/ez_git
+GitHubä¸‹è½½åœ°å€ï¼šhttps://github.com/BENMFeng/ez_git
 
-Îª±£Ö¤ÕÊ»§ºÍÏîÄ¿°²È«£¬×÷ÁË¼ÓÃÜ±àÒë´¦Àí£¬ĞèÒªÏòAdministratorÉêÇëgpgÃÜÔ¿license£¬
-²¢½«.gpglicÄ¿Â¼·Åµ½ez_git.pyoÍ¬Ò»¸öÎÄ¼ş¼ĞÖĞ£¬
-¸Ã³ÌĞòÖ÷Òªº¬ÒÔÏÂ¹¦ÄÜ£º
+ä¸ºä¿è¯å¸æˆ·å’Œé¡¹ç›®å®‰å…¨ï¼Œä½œäº†åŠ å¯†ç¼–è¯‘å¤„ç†ï¼Œéœ€è¦å‘Administratorç”³è¯·gpgå¯†é’¥licenseï¼Œ
+å¹¶å°†.gpglicç›®å½•æ”¾åˆ°ez_git.pyoåŒä¸€ä¸ªæ–‡ä»¶å¤¹ä¸­ï¼Œ
+è¯¥ç¨‹åºä¸»è¦å«ä»¥ä¸‹åŠŸèƒ½ï¼š
 
-(1) »ñÈ¡IP¼°È¨ÏŞ¡¢·ÖÖ§¹ÜÀíÅäÖÃ£»
+(1) è·å–IPåŠæƒé™ã€åˆ†æ”¯ç®¡ç†é…ç½®ï¼›
 
-(2) ¸üĞÂmaster¼°branch£»
+(2) æ›´æ–°masteråŠbranchï¼›
 
-(3) Ìá½»¹¤³Ì
+(3) æäº¤å·¥ç¨‹
 
-0x05 ĞŞ¸Ä±¾µØ¹¤³Ì£¬²¢ÓÃez_gitÀ´ÉÏ´«´úÂë
+0x05 ä¿®æ”¹æœ¬åœ°å·¥ç¨‹ï¼Œå¹¶ç”¨ez_gitæ¥ä¸Šä¼ ä»£ç 
 ----------------------------------------------------
-1. ÅäÖÃ±¾µØgit²Ö¿â(git config/git init£¬Òà¿É²»³õÊ¼»¯£¬¼ûez_gitÊ¹ÓÃ0£©)
+1. é…ç½®æœ¬åœ°gitä»“åº“(git config/git initï¼Œäº¦å¯ä¸åˆå§‹åŒ–ï¼Œè§ez_gitä½¿ç”¨0ï¼‰)
 
-2. git checkout branch£¨ÄãÈ¨ÏŞËùÔÚµÄbranch£©
+2. git checkout branchï¼ˆä½ æƒé™æ‰€åœ¨çš„branchï¼‰
 
-3. ±¾µØ¹¤×÷Ä¿Â¼ĞŞ¸Ä¹¤³Ì;
+3. æœ¬åœ°å·¥ä½œç›®å½•ä¿®æ”¹å·¥ç¨‹;
 
-4. ÉÏ´«ÖÁ±¾µØ¹¤×÷GITÔİ´æÇøÓò;£¨¿ÉÑ¡£©
+4. ä¸Šä¼ è‡³æœ¬åœ°å·¥ä½œGITæš‚å­˜åŒºåŸŸ;ï¼ˆå¯é€‰ï¼‰
 
-5. git commit/git tag(¿ÉÑ¡£©
+5. git commit/git tag(å¯é€‰ï¼‰
 
-6. ez_git³ÌĞòÊ¹ÓÃ·½·¨
+6. ez_gitç¨‹åºä½¿ç”¨æ–¹æ³•
 
-Usage Example: ÓÃ·¨¼û python ez_git.pyo --help
+Usage Example: ç”¨æ³•è§ python ez_git.pyo --help
 
-*   ³õÊ¼»¯£º 
+*   åˆå§‹åŒ–ï¼š 
 
-ÔÚ~/.bashrc»ò~/.bash_profile»ò»·¾³±äÁ¿ÖĞÉùÃ÷(#/path/ez_gitÎªez_git.pyoÖ÷³ÌĞòµÄ´æ·ÅÂ·¾¶)£º
+åœ¨~/.bashrcæˆ–~/.bash_profileæˆ–ç¯å¢ƒå˜é‡ä¸­å£°æ˜(#/path/ez_gitä¸ºez_git.pyoä¸»ç¨‹åºçš„å­˜æ”¾è·¯å¾„)ï¼š
 		
 <code>export EZ_GIT=/path/ez_git</code>   
 
-ÔËĞĞ
+è¿è¡Œ
 		
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectnam**e -b **yourbranch** -u</code>
 	
-_**²»ÓÃ×Ô½¨ÎÄ¼ş¼Ğ£¬ÏîÄ¿Ä¿Â¼»á×Ô¶¯Í¬²½µ½µ±Ç°Ä¿Â¼**_
+_**ä¸ç”¨è‡ªå»ºæ–‡ä»¶å¤¹ï¼Œé¡¹ç›®ç›®å½•ä¼šè‡ªåŠ¨åŒæ­¥åˆ°å½“å‰ç›®å½•**_
 		
-*   Ö±½ÓÌá½»¹¤³Ì£º
+*   ç›´æ¥æäº¤å·¥ç¨‹ï¼š
 	
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectname** -b **yourbranch**</code>
 	
-*   Ë³´øÌá½»×¢ÊÍ£º
+*   é¡ºå¸¦æäº¤æ³¨é‡Šï¼š
 	
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectname** -b **yourbranch** -m '**updatemessage**'</code>
 	
-*   ÏÈ¸üĞÂÄãµÄbranchÔÙÉÏ´«´úÂë£º
+*   å…ˆæ›´æ–°ä½ çš„branchå†ä¸Šä¼ ä»£ç ï¼š
 	
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectname** -b **yourbranch** --update</code>
 	
-*   ÉÏ´«´úÂëºóÍ¬²½Ò»ÏÂÍêÕûmaster·ÖÖ§(±ØĞë¾ß±¸master·ÖÖ§È¨ÏŞ£©: 
+*   ä¸Šä¼ ä»£ç ååŒæ­¥ä¸€ä¸‹å®Œæ•´masteråˆ†æ”¯(å¿…é¡»å…·å¤‡masteråˆ†æ”¯æƒé™ï¼‰: 
 	
 <code>python $EZ_GIT/ez_git.pyo -p **yourprojectname** -b **yourbranch** --sync</code>
 	
-**yourprojectname** ÊÇÖ¸ÄãĞèÒªÍ¬²½±¾µØµÄprojectÃû
+**yourprojectname** æ˜¯æŒ‡ä½ éœ€è¦åŒæ­¥æœ¬åœ°çš„projectå
 
-**yourbranch**      ÊÇÖ¸¸ÃprojectÄãËùÓµÓĞµÄ·ÖÖ§
+**yourbranch**      æ˜¯æŒ‡è¯¥projectä½ æ‰€æ‹¥æœ‰çš„åˆ†æ”¯
 
-**updatemessage**   ÊÇÌá½»Ê±ĞèÒª×¢ÊÍµÄÎÄ×Ö
+**updatemessage**   æ˜¯æäº¤æ—¶éœ€è¦æ³¨é‡Šçš„æ–‡å­—
 
 ---
 BENM FENG
 
 BD: 2014-12-25
 
-Modified: 2015-06-30
+Modified: 2015-07-27
