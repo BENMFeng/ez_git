@@ -3,8 +3,11 @@ GIT 加密信道项目管理 v1.3
 0x01 生成并上传SSH RSA公钥文件id_rsa.pub提交给Administrator 
 ----------------------------------------------------
 需要命令行环境(unix/linux/mac/cygwin/mingw/dos/windows cmd)
+
 生成方法，使用ssh-keygen/PuTTYgen，不要设置密码
+
 把~/.ssh/id_rsa.pub(windows: %UserProfile%\\.ssh\\id_rsa.pub)拷贝出来发送给 Administrator
+
 Windows可以用git bash使用ssh-keygen生成
 
 0x02 安装Git和Python，及需求包
