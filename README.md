@@ -1,4 +1,4 @@
-GIT 加密信道项目管理 v1.3
+GIT 加密信道项目管理 v1.4
 =============
 0x01 生成并上传SSH RSA公钥文件id_rsa.pub提交给Administrator 
 ----------------------------------------------------
@@ -22,7 +22,7 @@ git下载: http://git-scm.com/
 
 以下python库可以用pip或easy_install安装
 
-pycrypto (>=2.6) (Windows可能需要下载Microsoft Visual C++ Compiler for Python 2.7)
+~~pycrypto (>=2.6) (Windows可能需要下载Microsoft Visual C++ Compiler for Python 2.7)~~
 
 rsa (>=3.1.4)
 
